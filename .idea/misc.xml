@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Hernandez/Documents/repoLooking/LookingPlace/app/src/main/res/drawable/cargando.xml" value="0.121" />
         <entry key="..\:/Users/Hernandez/Documents/repoLooking/LookingPlace/app/src/main/res/drawable/redondo.xml" value="0.133" />
         <entry key="..\:/Users/Hernandez/Documents/repoLooking/LookingPlace/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Hernandez/Documents/repoLooking/LookingPlace/app/src/main/res/layout/cargando.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/Hernandez/Documents/repoLooking/LookingPlace/app/src/main/res/layout/fragment_acceso_principal.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/Hernandez/Documents/repoLooking/LookingPlace/app/src/main/res/layout/fragment_cargando_app.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/Hernandez/Documents/repoLooking/LookingPlace/app/src/main/res/layout/fragment_olvidaste_contra.xml" value="0.22" />
+        <entry key="..\:/Users/Hernandez/Documents/repoLooking/LookingPlace/app/src/main/res/layout/fragment_registrate_fragmento.xml" value="0.16510416666666666" />
+        <entry key="..\:/Users/Hernandez/Documents/repoLooking/LookingPlace/app/src/main/res/layout/fragment_tabla_categoria.xml" value="0.25" />
+        <entry key="..\:/Users/Hernandez/Documents/repoLooking/LookingPlace/app/src/main/res/layout/login.xml" value="0.178125" />
       </map>
     </option>
   </component>

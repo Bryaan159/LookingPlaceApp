@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondo"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explora El Salvador"
+            android:textSize="35sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/productsansregular"
+            android:textColor="@color/fondo"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="La experiencia sera fenomenal"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/productsansregular"
+            android:textColor="@color/fondo"
+            android:layout_marginTop="-10dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="4"
+            android:columnCount="2"
+            android:layout_margin="5dp"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center_horizontal"
+            android:columnOrderPreserved="false">
+
+            <!--Ciclismo-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/colorGrid"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ciclismo"
+                        android:layout_marginTop="18dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/productsansregular"
+                        android:textSize="15sp"
+                        android:text="Ciclismo"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"/>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--Montaña-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/colorGrid"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="18dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/montana"
+                        android:layout_marginTop="18dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/productsansregular"
+                        android:textSize="15sp"
+                        android:text="Montaña"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"/>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--Taxi-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/colorGrid"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/playa"
+                        android:layout_marginTop="18dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/productsansregular"
+                        android:textSize="15sp"
+                        android:text="Playa"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"/>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--Iglesia-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/colorGrid"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="18dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/capilla"
+                        android:layout_marginTop="18dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/productsansregular"
+                        android:textSize="15sp"
+                        android:text="Iglesia"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"/>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--Embajada-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/colorGrid"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/cocina"
+                        android:layout_marginTop="18dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/productsansregular"
+                        android:textSize="15sp"
+                        android:text="Restaurante"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"/>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--Iglesia-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/colorGrid"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="18dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/discoteca"
+                        android:layout_marginTop="18dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/productsansregular"
+                        android:textSize="20sp"
+                        android:text="Discoteca"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="15sp"/>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--Parque-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/colorGrid"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/museo"
+                        android:layout_marginTop="18dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/productsansregular"
+                        android:textSize="15sp"
+                        android:text="Museos"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"/>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--Teatros-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/colorGrid"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="18dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/teatro"
+                        android:layout_marginTop="18dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/productsansregular"
+                        android:textSize="20sp"
+                        android:text="Teatros"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
+</layout>

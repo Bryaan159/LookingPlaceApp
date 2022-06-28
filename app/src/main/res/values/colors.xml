@@ -14,4 +14,6 @@
     <color name="colorLogin">#FB4E3B</color>
     <color name="colorTitulo">#707070</color>
     <color name="colorOlvidasteContra">#3398D9</color>
+    <color name="colorFondo">#F5F5F5</color>
+    <color name="colorGrid">#fff</color>
 </resources>
