@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">LookingPlace</string>
-    <string name="correo">Email</string>
+    <string name="correo">Correo</string>
+    <string name="contra">Contraseña</string>
 </resources>
