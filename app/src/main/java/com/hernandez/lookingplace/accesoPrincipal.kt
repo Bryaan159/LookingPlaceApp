@@ -30,8 +30,19 @@ class accesoPrincipal : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.lifecycleOwner = viewLifecycleOwner
         var navControlador = findNavController()
+        // Boton para iniciar sesion
         binding.btnIniciarSesion.setOnClickListener{
             val funcion = accesoPrincipalDirections.actionAccesoFragmentToTablaCategoria2()
+            navControlador.navigate(funcion)
+        }
+        // Boton para entrar a recuperacion de contraseña
+        binding.btnOlvidasteContra.setOnClickListener {
+            val funcion = accesoPrincipalDirections.actionAccesoFragmentToOlvidasteContraFragmento2()
+            navControlador.navigate(funcion)
+        }
+        // Boton para registrarse con nueva cuenta
+        binding.btnRegistrate.setOnClickListener {
+            val funcion = accesoPrincipalDirections.actionAccesoFragmentToRegistrateFragmento()
             navControlador.navigate(funcion)
         }
     }

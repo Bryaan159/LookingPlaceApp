@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_accesoFragment_to_olvidasteContraFragmento2"
             app:destination="@id/olvidasteContraFragmento2" />
+        <action
+            android:id="@+id/action_accesoFragment_to_registrateFragmento"
+            app:destination="@id/registrateFragmento" />
     </fragment>
     <fragment
         android:id="@+id/tablaCategoria"
@@ -32,4 +35,16 @@
         android:name="com.hernandez.lookingplace.olvidasteContraFragmento"
         android:label="fragment_olvidaste_contra"
         tools:layout="@layout/fragment_olvidaste_contra" />
+    <fragment
+        android:id="@+id/registrateFragmento"
+        android:name="com.hernandez.lookingplace.registrateFragmento"
+        android:label="registrateFragmento" />
+    <fragment
+        android:id="@+id/buscador"
+        android:name="com.hernandez.lookingplace.menuLateral.buscador"
+        android:label="buscador" />
+    <fragment
+        android:id="@+id/configuracion"
+        android:name="com.hernandez.lookingplace.menuLateral.configuracion"
+        android:label="configuracion" />
 </navigation>
