@@ -46,6 +46,7 @@
 
             <!--Ciclismo-->
             <androidx.cardview.widget.CardView
+                android:id="@+id/carta_ciclismo"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="12dp"
@@ -78,6 +79,7 @@
             </androidx.cardview.widget.CardView>
             <!--Montaña-->
             <androidx.cardview.widget.CardView
+                android:id="@+id/carta_montaña"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="12dp"
@@ -110,6 +112,7 @@
             </androidx.cardview.widget.CardView>
             <!--Taxi-->
             <androidx.cardview.widget.CardView
+                android:id="@+id/carta_playa"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="12dp"
@@ -142,6 +145,7 @@
             </androidx.cardview.widget.CardView>
             <!--Iglesia-->
             <androidx.cardview.widget.CardView
+                android:id="@+id/carta_iglesia"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="12dp"
@@ -174,6 +178,7 @@
             </androidx.cardview.widget.CardView>
             <!--Embajada-->
             <androidx.cardview.widget.CardView
+                android:id="@+id/carta_restaurante"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="12dp"
@@ -206,6 +211,7 @@
             </androidx.cardview.widget.CardView>
             <!--Iglesia-->
             <androidx.cardview.widget.CardView
+                android:id="@+id/carta_discoteca"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="12dp"
@@ -238,6 +244,7 @@
             </androidx.cardview.widget.CardView>
             <!--Parque-->
             <androidx.cardview.widget.CardView
+                android:id="@+id/carta_Museo"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="12dp"
@@ -270,6 +277,7 @@
             </androidx.cardview.widget.CardView>
             <!--Teatros-->
             <androidx.cardview.widget.CardView
+                android:id="@+id/carta_teatro"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 app:cardCornerRadius="12dp"

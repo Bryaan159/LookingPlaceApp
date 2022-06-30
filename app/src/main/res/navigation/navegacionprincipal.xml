@@ -24,7 +24,11 @@
         android:id="@+id/tablaCategoria"
         android:name="com.hernandez.lookingplace.tablaCategoria"
         android:label="fragment_tabla_categoria"
-        tools:layout="@layout/fragment_tabla_categoria" />
+        tools:layout="@layout/fragment_tabla_categoria" >
+        <action
+            android:id="@+id/action_tablaCategoria_to_listaSitiosTuristicos"
+            app:destination="@id/listaSitiosTuristicos" />
+    </fragment>
     <fragment
         android:id="@+id/cargandoApp"
         android:name="com.hernandez.lookingplace.CargandoApp"
@@ -47,4 +51,8 @@
         android:id="@+id/configuracion"
         android:name="com.hernandez.lookingplace.menuLateral.configuracion"
         android:label="configuracion" />
+    <fragment
+        android:id="@+id/listaSitiosTuristicos"
+        android:name="com.hernandez.lookingplace.sitios.listaSitiosTuristicos"
+        android:label="listaSitiosTuristicos" />
 </navigation>
