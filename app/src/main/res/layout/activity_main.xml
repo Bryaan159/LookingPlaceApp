@@ -1,43 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/main_drawer"
-    android:fitsSystemWindows="true"
-    tools:openDrawer="start">
+    android:gravity="center"
+    android:background="@color/colorTarjeta"
+    tools:context=".MainActivity">
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <com.google.android.material.appbar.AppBarLayout
+    <androidx.cardview.widget.CardView
+        android:layout_height="160dp"
+        android:layout_width="350dp"
+        app:cardElevation="50dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="25dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:orientation="vertical"/>
 
-            <com.google.android.material.appbar.MaterialToolbar
-                android:id="@+id/main_toolbar"
-                style="@style/Widget.MaterialComponents.Toolbar.Primary"
-                android:background="@color/fondo"
-                app:titleTextColor="@color/fondo"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/montanna" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del lugar"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:textStyle="bold"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/colortexto"
+            android:textSize="15sp"
 
-        </com.google.android.material.appbar.AppBarLayout>
 
-        <include layout="@layout/activity_main_contenido"/>
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/nav_vista"
-        android:fitsSystemWindows="true"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/activity_main_cabezera_navegacion"/>
-
-</androidx.drawerlayout.widget.DrawerLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

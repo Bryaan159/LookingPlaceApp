@@ -8,13 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-<!--    Colores para LookingPlace-->
-    <color name="fondo">#1A3545</color>
-    <color name="rojo">	#FF0000</color>
-    <color name="colorLogin">#FB4E3B</color>
-    <color name="colorTitulo">#707070</color>
-    <color name="colorOlvidasteContra">#3398D9</color>
-    <color name="colorFondo">#F5F5F5</color>
-    <color name="colorGrid">#fff</color>
-    <color name="Fondo_menu_lateral">#474A4E</color>
+
+    <color name="colorTarjeta">#E5E5E5</color>
+    <color name="colortexto">#4D4B49</color>
 </resources>

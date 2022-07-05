@@ -1,4 +1,4 @@
-package com.hernandez.lookingplace
+package com.hernandez.recycle
 
 import org.junit.Test
 
