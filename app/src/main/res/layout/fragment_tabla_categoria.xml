@@ -65,6 +65,7 @@
                         android:src="@drawable/ciclismo"
                         android:layout_marginTop="18dp"/>
                     <TextView
+                        android:id="@+id/ciclismo_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/productsansregular"
@@ -98,6 +99,7 @@
                         android:src="@drawable/montana"
                         android:layout_marginTop="18dp"/>
                     <TextView
+                        android:id="@+id/montaña_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/productsansregular"
@@ -131,6 +133,7 @@
                         android:src="@drawable/playa"
                         android:layout_marginTop="18dp"/>
                     <TextView
+                        android:id="@+id/playa_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/productsansregular"
@@ -164,6 +167,7 @@
                         android:src="@drawable/capilla"
                         android:layout_marginTop="18dp"/>
                     <TextView
+                        android:id="@+id/iglesia_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/productsansregular"
@@ -197,6 +201,7 @@
                         android:src="@drawable/cocina"
                         android:layout_marginTop="18dp"/>
                     <TextView
+                        android:id="@+id/restaurante_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/productsansregular"
@@ -230,10 +235,11 @@
                         android:src="@drawable/discoteca"
                         android:layout_marginTop="18dp"/>
                     <TextView
+                        android:id="@+id/disco_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/productsansregular"
-                        android:textSize="20sp"
+                        android:textSize="15sp"
                         android:text="Discoteca"
                         android:textColor="@color/black"
                         android:layout_marginTop="15sp"/>
@@ -263,6 +269,7 @@
                         android:src="@drawable/museo"
                         android:layout_marginTop="18dp"/>
                     <TextView
+                        android:id="@+id/museo_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/productsansregular"
@@ -296,10 +303,11 @@
                         android:src="@drawable/teatro"
                         android:layout_marginTop="18dp"/>
                     <TextView
+                        android:id="@+id/teatro_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/productsansregular"
-                        android:textSize="20sp"
+                        android:textSize="15sp"
                         android:text="Teatros"
                         android:textColor="@color/black"
                         android:layout_marginTop="20dp"/>

@@ -42,17 +42,26 @@
     <fragment
         android:id="@+id/registrateFragmento"
         android:name="com.hernandez.lookingplace.registrateFragmento"
-        android:label="registrateFragmento" />
+        android:label="registrateFragmento"
+        tools:layout="@layout/fragment_registrate_fragmento"/>
     <fragment
         android:id="@+id/buscador"
         android:name="com.hernandez.lookingplace.menuLateral.buscador"
-        android:label="buscador" />
+        android:label="buscador"
+        tools:layout="@layout/fragment_buscador"/>
     <fragment
         android:id="@+id/configuracion"
         android:name="com.hernandez.lookingplace.menuLateral.configuracion"
-        android:label="configuracion" />
+        android:label="configuracion"
+        tools:layout="@layout/fragment_configuracion"/>
     <fragment
         android:id="@+id/listaSitiosTuristicos"
         android:name="com.hernandez.lookingplace.sitios.listaSitiosTuristicos"
-        android:label="listaSitiosTuristicos" />
+        android:label="listaSitiosTuristicos"
+        tools:layout="@layout/fragment_lista_sitios_turisticos">
+        <argument
+            android:name="Titulo"
+            app:argType="string"
+            android:defaultValue="PLaya" />
+    </fragment>
 </navigation>
