@@ -1,4 +1,4 @@
-package com.hernandez.recycle
+package com.hernandez.onboarding
 
 import org.junit.Test
 

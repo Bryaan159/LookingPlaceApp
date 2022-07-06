@@ -1,4 +1,4 @@
-package com.hernandez.recycle
+package com.hernandez.onboarding
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Recycle"
+rootProject.name = "onBoarding"
 include ':app'
