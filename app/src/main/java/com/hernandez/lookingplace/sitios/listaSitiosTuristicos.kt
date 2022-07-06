@@ -1,5 +1,7 @@
 package com.hernandez.lookingplace.sitios
 
+import android.content.Intent
+import android.net.NetworkInfo
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.hernandez.lookingplace.R
@@ -28,28 +32,32 @@ class listaSitiosTuristicos : Fragment() {
     }
 
     // Funcion donde se aplica RecyclewView
-    private fun initRecycleView() {
+    private fun initRecycleView(navController: NavController) {
         val manager = LinearLayoutManager(activity)
-        val decoration = DividerItemDecoration(this.context, manager.orientation)
+        val decoration = DividerItemDecoration(activity, manager.orientation)
         binding.sitiosRecycler.layoutManager = manager
         binding.sitiosRecycler.adapter =
-            SitiosAdaptador(sitioProveedor.sitioList) { sitio ->
+            SitiosAdaptador(sitioProveedor.sitioList) {
                 onItemSelected(
-                    sitio
+                    it,
+                    navController
                 )
             }
         binding.sitiosRecycler.addItemDecoration(decoration)
     }
 
-    private fun onItemSelected(sitio: Sitio) {
-        Toast.makeText(activity, "selecciono un sitio", Toast.LENGTH_SHORT).show()
+    private fun onItemSelected(sitio: Sitio, navController: NavController) {
+        val intent = Intent(activity, VistaSitioActivity::class.java)
+        intent.putExtra("sitio",sitio)
+        startActivity(intent)
+        Toast.makeText(activity, sitio.nombre, Toast.LENGTH_SHORT).show()
     }
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = DataBindingUtil.inflate(
             inflater,
             R.layout.fragment_lista_sitios_turisticos,
@@ -64,7 +72,8 @@ class listaSitiosTuristicos : Fragment() {
         binding.lifecycleOwner = viewLifecycleOwner
         // Hacemos uso de la variable titulo.
         binding.tituloText.text = titulo
-        initRecycleView()
+        val navController = findNavController()
+        initRecycleView(navController)
     }
 
 

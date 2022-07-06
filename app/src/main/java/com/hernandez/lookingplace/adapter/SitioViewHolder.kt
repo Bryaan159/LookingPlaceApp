@@ -16,6 +16,6 @@ class SitioViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         Glide.with(binding.imagenLugarImagen.context).load(sitioModelo.foto)
             .into(binding.imagenLugarImagen)
 
-        itemView.setOnClickListener{ onclickListener(sitioModelo)}
+        itemView.setOnClickListener{ onclickListener.invoke(sitioModelo)}
     }
 }
