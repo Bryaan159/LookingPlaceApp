@@ -2,15 +2,44 @@ package com.hernandez.deslizante
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.denzcoskun.imageslider.ImageSlider
 import com.denzcoskun.imageslider.models.SlideModel
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var reutilizarVista:RecyclerView
+    private lateinit var planesLista:ArrayList<Planes>
+    private lateinit var planesAdaptador: PlanesAdaptador
+
+//    Sugerencia
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        imagenesDeslizante()
 
+        reutilizarVista = findViewById(R.id.reutilizarPlanes)
+        reutilizarVista.setHasFixedSize(true)
+        reutilizarVista.layoutManager = LinearLayoutManager(this)
+
+
+        planesLista = ArrayList()
+
+        planesLista.add(Planes(R.drawable.playa,R.drawable.imagen7,"Plan X","En este plan \nDisfrutaras","Guardar"))
+        planesLista.add(Planes(R.drawable.imagen3,R.drawable.imagen4,"Plan X","En este plan \nDisfrutaras","Guardar"))
+        planesLista.add(Planes(R.drawable.imagen8,R.drawable.imagen5,"Plan X","En este plan \nDisfrutaras","Guardar"))
+        planesLista.add(Planes(R.drawable.imagen2,R.drawable.imagen6,"Plan X","En este plan \nDisfrutaras","Guardar"))
+
+
+        planesAdaptador = PlanesAdaptador(planesLista)
+        reutilizarVista.adapter = planesAdaptador
+
+    }
+
+    private fun imagenesDeslizante() {
         val imagenLista = ArrayList<SlideModel>()
 
         imagenLista.add(SlideModel("https://farm6.staticflickr.com/5137/5400078463_0194cd0108.jpg","Nombre del lugar"))
@@ -23,6 +52,6 @@ class MainActivity : AppCompatActivity() {
 
         val imagenDeslizante = findViewById<ImageSlider>(R.id.desplazamiento)
         imagenDeslizante.setImageList(imagenLista)
-
     }
+
 }
